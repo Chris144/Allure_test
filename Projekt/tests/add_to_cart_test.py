@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from Projekt.locators.locators import AddToBasketLocators
 from Projekt.pages.add_to_cart_page import AddToCartPage
 from Projekt.pages.home_page import HomePage
+from Projekt.pages.base_page import BasePage
 from Projekt.tests.test_base import BaseTest
 
 
@@ -18,6 +19,8 @@ class AddToCart(BaseTest, unittest.TestCase):
             self.home_page = HomePage(self.driver)
         with allure.step('Initialize add to cart page'):
             self.add_to_cart_page = AddToCartPage(self.driver)
+            with allure.step('Initialize add to attach screenshot'):
+                self.base_page = BasePage(self.driver)
 
         # Define expected values
         expected_values = [
@@ -31,22 +34,18 @@ class AddToCart(BaseTest, unittest.TestCase):
         def add_and_verify_cart():
             with allure.step('Hover on category'):
                 self.add_to_cart_page.hoover_on_category()
-                attach_screenshot(name='Hover on category')
+                self.base_page.attach_screenshot(name='Hover on category')
             with allure.step('Choose shoes from category'):
                 self.add_to_cart_page.choose_shoes_from_category()
-                attach_screenshot(name='Choose shoes from category')
+                self.base_page.attach_screenshot(name='Choose shoes from category')
             with allure.step('Add product to cart'):
                 self.add_to_cart_page.add_product_to_cart()
-                attach_screenshot(name='Add product to cart')
+                self.base_page.attach_screenshot(name='Add product to cart')
             with allure.step('Go to basket'):
                 self.add_to_cart_page.go_to_basket()
-                attach_screenshot(name='Go to basket')
+                self.base_page.attach_screenshot(name='Go to basket')
                 cart_price = self.driver.find_element(*AddToBasketLocators.MY_CART).text
                 return cart_price
-
-        def attach_screenshot(name):
-            screenshot = self.driver.get_screenshot_as_png()
-            allure.attach(screenshot, name=name, attachment_type=allure.attachment_type.PNG)
 
         try:
             # First attempt to add product to cart
@@ -74,5 +73,5 @@ class AddToCart(BaseTest, unittest.TestCase):
 
         except Exception as e:
             # Debug information
-            attach_screenshot(self.driver, 'Test failed')
+            self.base_page.attach_screenshot(name='Test failed')
             print(f"Test failed with exception: {e}")
