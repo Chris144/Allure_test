@@ -31,21 +31,21 @@ class AddToCart(BaseTest, unittest.TestCase):
         def add_and_verify_cart():
             with allure.step('Hover on category'):
                 self.add_to_cart_page.hoover_on_category()
-                attach_screenshot(self.driver, 'Hover on category')
+                attach_screenshot(name='Hover on category')
             with allure.step('Choose shoes from category'):
                 self.add_to_cart_page.choose_shoes_from_category()
-                attach_screenshot(self.driver, 'Choose shoes from category')
+                attach_screenshot(name='Choose shoes from category')
             with allure.step('Add product to cart'):
                 self.add_to_cart_page.add_product_to_cart()
-                attach_screenshot(self.driver, 'Add product to cart')
+                attach_screenshot(name='Add product to cart')
             with allure.step('Go to basket'):
                 self.add_to_cart_page.go_to_basket()
-                attach_screenshot(self.driver, 'Go to basket')
+                attach_screenshot(name='Go to basket')
                 cart_price = self.driver.find_element(*AddToBasketLocators.MY_CART).text
                 return cart_price
 
-        def attach_screenshot(driver, name):
-            screenshot = driver.get_screenshot_as_png()
+        def attach_screenshot(name):
+            screenshot = self.driver.get_screenshot_as_png()
             allure.attach(screenshot, name=name, attachment_type=allure.attachment_type.PNG)
 
         try:
