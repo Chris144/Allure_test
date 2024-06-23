@@ -61,8 +61,8 @@ class SortingTest(BaseTest, unittest.TestCase):
         with allure.step('Click on sorting list'):
             self.sort_page.click_on_sorting_list()
             self.base_page.attach_screenshot(name='Click on sorting list')
-        with allure.step('Select_sorting_by_popularity'):
-            self.sort_page.select_sorting_by_popularity()
+        with allure.step('Select_sorting_by_newness'):
+            self.sort_page.select_sorting_by_newness()
             self.base_page.attach_screenshot(name='Select_sorting_by_newness')
         # Checking expected effects using assertions
         with allure.step('Verify sorting option'):
@@ -84,8 +84,8 @@ class SortingTest(BaseTest, unittest.TestCase):
         with allure.step('Click on sorting list'):
             self.sort_page.click_on_sorting_list()
             self.base_page.attach_screenshot(name='Click on sorting list')
-        with allure.step('Select_sorting_by_popularity'):
-            self.sort_page.select_sorting_by_popularity()
+        with allure.step('Select_sorting_by_average_rating'):
+            self.sort_page.select_sorting_by_average()
             self.base_page.attach_screenshot(name='Select_sorting_by_average')
         # Checking expected effects using assertions
         with allure.step('Verify sorting option'):
