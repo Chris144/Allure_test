@@ -42,7 +42,7 @@ class SortingTest(BaseTest, unittest.TestCase):
         # Checking expected effects using assertions
         with allure.step('Verify sorting option'):
             sort_popularity = self.driver.find_element(*SortLocators.OPTION_POPULARITY)
-            self.assertEqual("Sort by popularity", sort_popularity.text)
+            self.assertEqual("Sort by popularity2", sort_popularity.text)
             print(sort_popularity.text)
             self.base_page.attach_screenshot(name='Verify sorting option')
         with allure.step('Screenshot_select_sorting_by_popularity'):
@@ -56,7 +56,7 @@ class SortingTest(BaseTest, unittest.TestCase):
         with allure.step('Choose menu'):
             self.home_page.choose_menu()
             self.base_page.attach_screenshot(name='Choose menu')
-        with allure.step('Click on sorting list'):
+        with allure.step('Click on sorting list'):S
             self.sort_page.click_on_sorting_list()
             self.base_page.attach_screenshot(name='Click on sorting list')
         with allure.step('Select_sorting_by_newness'):
