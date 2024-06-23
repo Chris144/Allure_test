@@ -23,7 +23,7 @@ class SortingTest(BaseTest, unittest.TestCase):
         with allure.step('Initialize add to cart page'):
             self.sort_page = SortPage(self.driver)
         with allure.step('Initialize add to attach screenshot'):
-            self.base_test = BaseTest(self.driver)
+            self.base_test = BaseTest
 
     @allure.story('Sorting product')
     @allure.severity(allure.severity_level.NORMAL)
