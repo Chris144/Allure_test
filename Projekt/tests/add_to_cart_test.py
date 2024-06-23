@@ -17,10 +17,8 @@ class AddToCart(BaseTest, unittest.TestCase):
     def test_add_to_cart(self):
         with allure.step('Initialize page'):
             self.home_page = HomePage(self.driver)
-        with allure.step('Initialize add to cart page'):
             self.add_to_cart_page = AddToCartPage(self.driver)
-            with allure.step('Initialize add to attach screenshot'):
-                self.base_page = BasePage(self.driver)
+            self.base_page = BasePage(self.driver)
 
         # Define expected values
         expected_values = [

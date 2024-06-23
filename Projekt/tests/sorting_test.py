@@ -21,9 +21,7 @@ class SortingTest(BaseTest, unittest.TestCase):
         super().setUp()
         with allure.step('Initialize page'):
             self.home_page = HomePage(self.driver)
-        with allure.step('Initialize add to cart page'):
             self.sort_page = SortPage(self.driver)
-        with allure.step('Initialize add to attach screenshot'):
             self.base_page = BasePage(self.driver)
 
     @allure.story('Sorting product')
