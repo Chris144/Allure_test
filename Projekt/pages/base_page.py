@@ -1,3 +1,5 @@
+
+
 class BasePage:
     """
     Base class for each Page
