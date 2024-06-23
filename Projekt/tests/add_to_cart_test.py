@@ -12,7 +12,10 @@ from Projekt.tests.test_base import BaseTest
 
 
 class AddToCart(BaseTest, unittest.TestCase):
-    @allure.story('Add product to basket')
+    """
+        TC 001: Test adding product to cart :
+    """
+    @allure.story('Add product to cart')
     @allure.severity(allure.severity_level.BLOCKER)
     def test_add_to_cart(self):
         with allure.step('Initialize page'):

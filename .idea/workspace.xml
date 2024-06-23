@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/tests/add_to_cart_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/tests/add_to_cart_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/tests/billing_details_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/tests/billing_details_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/tests/sorting_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/tests/sorting_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <recent name="C:\Users\krzys\PycharmProjects\Studia_Projekt_2024\Projekt\screen_tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for sorting_test.SortingTest.test_checking_sorting_by_popularity">
+  <component name="RunManager" selected="Python tests.Python tests for billing_details_test.BillingDetails.test_positive_place_order">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Studia_Projekt_2024" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,6 +138,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for billing_details_test.BillingDetails.test_positive_place_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Allure_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Projekt/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;billing_details_test.BillingDetails.test_positive_place_order&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for sorting_test.SortingTest.test_checking_sorting_by_popularity" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Studia_Projekt_2024" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,27 +180,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for user_registration_test.RegistrationTest.test_registration_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Studia_Projekt_2024" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Projekt/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;user_registration_test.RegistrationTest.test_registration_positive&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for billing_details_test.BillingDetails.test_positive_place_order" />
         <item itemvalue="Python tests.Python tests for sorting_test.SortingTest.test_checking_sorting_by_popularity" />
         <item itemvalue="Python tests.Python tests for user_login_test.TestLogin.test_login_incorrect_password" />
         <item itemvalue="Python tests.Python tests for add_to_cart_test.AddToCart.test_add_to_cart" />
         <item itemvalue="Python tests.Python tests for billing_details_test.BillingDetails" />
-        <item itemvalue="Python tests.Python tests for user_registration_test.RegistrationTest.test_registration_positive" />
       </list>
     </recent_temporary>
   </component>
