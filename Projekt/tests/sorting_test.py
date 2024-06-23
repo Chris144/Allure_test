@@ -33,21 +33,21 @@ class SortingTest(BaseTest, unittest.TestCase):
         """
         with allure.step('Choose menu'):
             self.home_page.choose_menu()
-            self.base_test.attach_screenshot(name='Choose menu')
+            self.base_test.attach_screenshot(self, name='Choose menu')
         with allure.step('Click on sorting list'):
             self.sort_page.click_on_sorting_list()
-            self.base_test.attach_screenshot(name='Click on sorting list')
+            self.base_test.attach_screenshot(self, name='Click on sorting list')
         with allure.step('Select_sorting_by_popularity'):
             self.sort_page.select_sorting_by_popularity()
-            self.base_test.attach_screenshot(name='Select_sorting_by_popularity')
+            self.base_test.attach_screenshot(self,name='Select_sorting_by_popularity')
         # Checking expected effects using assertions
         with allure.step('Verify sorting option'):
             sort_popularity = self.driver.find_element(*SortLocators.OPTION_POPULARITY)
             self.assertEqual("Sort by popularity", sort_popularity.text)
             print(sort_popularity.text)
-            self.base_test.attach_screenshot(name='Verify sorting option')
+            self.base_test.attach_screenshot(self, name='Verify sorting option')
         with allure.step('Select_sorting_by_popularity'):
-            self.base_test.attach_screenshot(name='Select_sorting_by_popularity')
+            self.base_test.attach_screenshot(self, name='Select_sorting_by_popularity')
             self.home_page.screenshot()
 
 
