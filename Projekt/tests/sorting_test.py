@@ -90,7 +90,7 @@ class SortingTest(BaseTest, unittest.TestCase):
         # Checking expected effects using assertions
         with allure.step('Verify sorting option'):
             sort_average = self.driver.find_element(*SortLocators.OPTION_AVERAGE)
-            self.assertEqual("Sort by average", sort_average.text)
+            self.assertEqual("Sort by average rating", sort_average.text)
             print(sort_average.text)
             self.base_page.attach_screenshot(name='Verify sorting option')
         with allure.step('Screenshot_select_sorting_by_average'):
