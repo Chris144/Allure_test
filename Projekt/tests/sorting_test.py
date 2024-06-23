@@ -66,9 +66,9 @@ class SortingTest(BaseTest, unittest.TestCase):
             self.base_page.attach_screenshot(name='Select_sorting_by_newness')
         # Checking expected effects using assertions
         with allure.step('Verify sorting option'):
-            sort_popularity = self.driver.find_element(*SortLocators.OPTION_NEWNESS)
-            self.assertEqual("Sort by newness", sort_popularity.text)
-            print(sort_popularity.text)
+            sort_newness = self.driver.find_element(*SortLocators.OPTION_NEWNESS)
+            self.assertEqual("Sort by newness", sort_newness.text)
+            print(sort_newness.text)
             self.base_page.attach_screenshot(name='Verify sorting option')
         with allure.step('Screenshot_select_sorting_by_newness'):
             self.base_page.attach_screenshot(name='Screenshot_select_sorting_by_newness')
@@ -89,9 +89,9 @@ class SortingTest(BaseTest, unittest.TestCase):
             self.base_page.attach_screenshot(name='Select_sorting_by_average')
         # Checking expected effects using assertions
         with allure.step('Verify sorting option'):
-            sort_popularity = self.driver.find_element(*SortLocators.OPTION_AVERAGE)
-            self.assertEqual("Sort by average", sort_popularity.text)
-            print(sort_popularity.text)
+            sort_average = self.driver.find_element(*SortLocators.OPTION_AVERAGE)
+            self.assertEqual("Sort by average", sort_average.text)
+            print(sort_average.text)
             self.base_page.attach_screenshot(name='Verify sorting option')
         with allure.step('Screenshot_select_sorting_by_average'):
             self.base_page.attach_screenshot(name='Screenshot_select_sorting_by_average')
