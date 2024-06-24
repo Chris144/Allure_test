@@ -56,9 +56,10 @@ class SortingTest(BaseTest, unittest.TestCase):
         with allure.step('Choose menu'):
             self.home_page.choose_menu()
             self.base_page.attach_screenshot(name='Choose menu')
-        with allure.step('Click on sorting list'):S
+        with allure.step('Click on sorting list'):
             self.sort_page.click_on_sorting_list()
-            self.base_page.attach_screenshot(name='Click on sorting list')
+        self.base_page.attach_screenshot(name='Click on sorting list')
+
         with allure.step('Select_sorting_by_newness'):
             self.sort_page.select_sorting_by_newness()
             self.base_page.attach_screenshot(name='Select_sorting_by_newness')
