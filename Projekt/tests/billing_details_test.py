@@ -161,6 +161,8 @@ class BillingDetails(AddToCart, unittest.TestCase):
             self.billing_details.enter_address_optional(BillingData.street_address_optional)
         with allure.step('Enter_postcode'):
             self.billing_details.enter_postcode(BillingData.post_code)
+        with allure.step('Enter_state_county'):
+            self.billing_details.enter_state_county(BillingData.state_county)
         with allure.step('Enter_town_city'):
             self.billing_details.enter_town_city(BillingData.town_city)
         with allure.step('Enter_phone'):
