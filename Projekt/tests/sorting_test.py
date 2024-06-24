@@ -47,7 +47,7 @@ class SortingTest(BaseTest, unittest.TestCase):
             self.base_page.attach_screenshot(name='Verify sorting option')
         with allure.step('Screenshot_select_sorting_by_popularity'):
             self.base_page.attach_screenshot(name='Screenshot_select_sorting_by_popularity')
-            self.home_page.screenshot()
+
 
     def test_checking_sorting_by_newness(self):
         """
@@ -70,7 +70,7 @@ class SortingTest(BaseTest, unittest.TestCase):
             self.base_page.attach_screenshot(name='Verify sorting option')
         with allure.step('Screenshot_select_sorting_by_newness'):
             self.base_page.attach_screenshot(name='Screenshot_select_sorting_by_newness')
-            self.home_page.screenshot()
+
 
     def test_checking_sorting_by_average(self):
         """
@@ -93,7 +93,7 @@ class SortingTest(BaseTest, unittest.TestCase):
             self.base_page.attach_screenshot(name='Verify sorting option')
         with allure.step('Screenshot_select_sorting_by_average'):
             self.base_page.attach_screenshot(name='Screenshot_select_sorting_by_average')
-            self.home_page.screenshot()
+
 
     def tearDown(self):
         BaseTest.tearDown(self)

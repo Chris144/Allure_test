@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b78d08b6-464a-4fc4-b86c-05d8bc868f3e" name="Changes" comment="CI/CD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/tests/sorting_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/tests/sorting_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/tests/user_login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/tests/user_login_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,7 @@
       <recent name="C:\Users\krzys\PycharmProjects\Studia_Projekt_2024\Projekt\screen_tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for billing_details_test.BillingDetails.test_no_selecting_country1">
+  <component name="RunManager" selected="Python tests.Python tests for user_login_test.TestLogin">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Studia_Projekt_2024" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,8 +152,8 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for sorting_test.SortingTest.test_checking_sorting_by_popularity" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Studia_Projekt_2024" />
+    <configuration name="Python tests for user_login_test.TestLogin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Allure_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -161,12 +162,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;sorting_test.SortingTest.test_checking_sorting_by_popularity&quot;" />
+      <option name="_new_target" value="&quot;user_login_test.TestLogin&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for user_login_test.TestLogin.test_login_incorrect_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Studia_Projekt_2024" />
+    <configuration name="Python tests for user_login_test.TestLogin.test_login_positive_enter_email" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Allure_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -175,17 +176,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;user_login_test.TestLogin.test_login_incorrect_password&quot;" />
+      <option name="_new_target" value="&quot;user_login_test.TestLogin.test_login_positive_enter_email&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for user_login_test.TestLogin" />
+        <item itemvalue="Python tests.Python tests for user_login_test.TestLogin.test_login_positive_enter_email" />
         <item itemvalue="Python tests.Python tests for billing_details_test.BillingDetails.test_no_selecting_country1" />
         <item itemvalue="Python tests.Python tests for billing_details_test.BillingDetails.test_no_selecting_country" />
         <item itemvalue="Python tests.Python tests for billing_details_test.BillingDetails.test_positive_place_order" />
-        <item itemvalue="Python tests.Python tests for sorting_test.SortingTest.test_checking_sorting_by_popularity" />
-        <item itemvalue="Python tests.Python tests for user_login_test.TestLogin.test_login_incorrect_password" />
       </list>
     </recent_temporary>
   </component>

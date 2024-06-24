@@ -18,13 +18,14 @@ class TestLogin(BaseTest, unittest.TestCase):
     """
         Test checking user logging in various ways
     """
+
     def setUp(self):
         with allure.step('Initialize page'):
             super().setUp()
             self.home_page = HomePage(self.driver)
             self.login_page = LoginPage(self.driver)
             self.faker_data = AccountData()
-            self.base_page = BasePage
+            self.base_page = BasePage(self.driver)
 
     @allure.story('Fill billing details')
     @allure.severity(allure.severity_level.CRITICAL)
