@@ -154,7 +154,7 @@ class BillingDetails(AddToCart, unittest.TestCase):
         with allure.step('Enter_company_name'):
             self.billing_details.enter_company_name(BillingData.company)
         with allure.step('No_enter_country'):
-            self.billing_details.choose_country('')
+            self.billing_details.choose_country('Select a country…')
         with allure.step('Enter_street_address'):
             self.billing_details.enter_street_address(BillingData.street_address)
         with allure.step('Enter_address_optional'):
@@ -444,6 +444,7 @@ class BillingDetails(AddToCart, unittest.TestCase):
             print(lista_errors.text)
         with allure.step('Taking_screenshot'):
             self.base_page.attach_screenshot(name='Incorrect_phone_number')
+
 
     def tearDown(self):
         self.driver.quit()
