@@ -7,7 +7,7 @@ from pages.add_to_cart_page import AddToCartPage
 from pages.billing_details_page import BillingDetailsPage
 from pages.home_page import HomePage
 from test_data.data_faker_for_tests import BillingData
-from add_to_cart_test import AddToCart
+from test_add_to_cart import AddToCart
 
 
 class BillingDetails(AddToCart):
