@@ -1,19 +1,20 @@
 import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 from locators.locators import AddToBasketLocators
 from pages.add_to_cart_page import AddToCartPage
 from pages.home_page import HomePage
 from pages.base_page import BasePage
 from test_base import BaseTest
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class AddToCart(BaseTest):
     """
         TC 001: Test adding product to cart :
     """
+
     @allure.story('Add product to cart')
     @allure.severity(allure.severity_level.BLOCKER)
     def test_add_to_cart(self):
@@ -54,7 +55,6 @@ class AddToCart(BaseTest):
             # Verify if the cart content matches any of the expected values
             with allure.step('Assert-Unexpected cart value'):
                 assert cart_text in expected_values, f"Unexpected cart value: {cart_text}"
-
 
             # Explicit wait to check if the empty cart element is present
             empty_cart_text = "Your cart is currently empty."
